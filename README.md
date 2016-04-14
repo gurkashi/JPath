@@ -3,23 +3,6 @@ XPath for json objects
 
 Usages:
 
-package com.gur.infra.json;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
-public class JPathTest {
-    final static String jsonString =
-            "{\"employees\":[\n" +
-            "    {\"firstName\":\"John\", \"lastName\":\"Doe\", \"age\":15, \"adult\":false},\n" +
-            "    {\"firstName\":\"Anna\", \"lastName\":\"Smith\", \"age\":25, \"adult\":true},\n" +
-            "    {\"firstName\":\"Peter\", \"lastName\":\"Jones\", \"age\":19, \"adult\":true}\n" +
-            "]}";
-
     @Test
     public void put() throws JPathException {
         JPath json = new JPath();
